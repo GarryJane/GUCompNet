@@ -1,0 +1,64 @@
+$ netstat -nta | grep ESTABLISHED
+tcp        0      0 94.243.130.86:34344     5.61.239.22:443         ESTABLISHED
+tcp        0      0 94.243.130.86:40806     173.194.220.108:993     ESTABLISHED
+tcp        0      0 94.243.130.86:59382     87.250.250.119:443      ESTABLISHED
+tcp        0      0 94.243.130.86:52284     162.125.18.133:443      ESTABLISHED
+tcp        0      0 94.243.130.86:55980     94.243.128.146:143      ESTABLISHED
+tcp        0      0 94.243.130.86:42736     94.243.128.146:27777    ESTABLISHED
+tcp        0      0 94.243.130.86:59286     94.243.128.146:143      ESTABLISHED
+tcp        0      0 94.243.130.86:34342     5.61.239.22:443         ESTABLISHED
+tcp        0      0 94.243.130.86:52940     162.125.18.133:443      ESTABLISHED
+tcp        0      0 94.243.130.86:48410     94.243.128.146:143      ESTABLISHED
+tcp        0      0 94.243.130.86:59016     94.243.128.146:143      ESTABLISHED
+tcp        0      0 94.243.130.86:48758     94.243.128.146:143      ESTABLISHED
+tcp        0      0 94.243.130.86:40218     64.233.162.188:5228     ESTABLISHED
+tcp        0      0 94.243.130.86:36240     94.243.128.144:80       ESTABLISHED
+tcp        0      0 94.243.130.86:36204     94.243.128.144:80       ESTABLISHED
+tcp        0      0 94.243.130.86:40490     178.21.64.18:22         ESTABLISHED
+tcp        0      0 94.243.130.86:38314     173.194.222.97:443      ESTABLISHED
+tcp        0      0 94.243.130.86:59244     64.233.164.108:993      ESTABLISHED
+tcp        0      0 94.243.130.86:60538     217.69.136.175:443      ESTABLISHED
+tcp        0      0 94.243.130.86:54446     104.25.218.21:443       ESTABLISHED
+tcp        0      0 94.243.130.86:42502     64.233.164.109:993      ESTABLISHED
+tcp        0      0 94.243.130.86:51064     151.101.86.2:443        ESTABLISHED
+tcp        0      0 94.243.130.86:46090     149.154.163.30:443      ESTABLISHED
+tcp        0      0 94.243.130.86:34346     5.61.239.22:443         ESTABLISHED
+tcp        0      0 94.243.130.86:40800     173.194.220.108:993     ESTABLISHED
+tcp        0      0 94.243.130.86:40804     173.194.220.108:993     ESTABLISHED
+tcp        0      0 94.243.130.86:48270     5.61.239.21:443         ESTABLISHED
+
+!
+! PC0 на hw5.pkt
+!
+C:\>ipconfig
+
+FastEthernet0 Connection:(default port)
+
+   Link-local IPv6 Address.........: FE80::2E0:F7FF:FEC9:2747
+   IP Address......................: 10.10.10.100
+   Subnet Mask.....................: 255.255.255.0
+   Default Gateway.................: 10.10.10.1
+
+C:\>ping 10.10.10.1
+
+Pinging 10.10.10.1 with 32 bytes of data:
+
+Reply from 10.10.10.1: bytes=32 time=1ms TTL=128
+Reply from 10.10.10.1: bytes=32 time=1ms TTL=128
+
+C:\>nslookup server.lan
+
+Server: [10.10.10.1]
+Address:  10.10.10.1
+
+Non-authoritative answer:
+Name:   server.lan
+Address:   10.10.10.1
+
+C:\>ping server.lan
+
+Pinging 10.10.10.1 with 32 bytes of data:
+
+Reply from 10.10.10.1: bytes=32 time<1ms TTL=128
+Reply from 10.10.10.1: bytes=32 time<1ms TTL=128
+
